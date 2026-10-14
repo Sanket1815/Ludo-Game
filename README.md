@@ -1,5 +1,8 @@
 # Ludo
 
+<img width="1408" height="932" alt="image" src="https://github.com/user-attachments/assets/abe1f0f6-6a7a-44fd-b464-7865955ee14a" />
+
+
 A 2 to 4 player Ludo game. The rules engine is plain C# with no UI dependencies, and the console app is one binding on top of it. A Unity view can call the same `RollDice` / `ApplyMove` methods and listen to the engine events.
 
 ## Run
