@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ludo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="felt">
+    <header class="top">
+      <div>
+        <p class="eyebrow">Turn-based</p>
+        <h1>Ludo</h1>
+      </div>
+      <button id="new-game" class="ghost" type="button">New game</button>
+    </header>
+
+    <div class="layout">
+      <div class="board-wrap">
+        <div id="board" class="board" aria-label="Ludo board"></div>
+      </div>
+
+      <aside class="panel">
+        <div class="dice-card">
+          <div id="dice" class="dice" data-face="1" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dice-copy">
+            <p id="status" class="status">Set up a game to begin.</p>
+            <p id="streak" class="streak"></p>
+          </div>
+        </div>
+
+        <button id="roll" class="roll" type="button" disabled>Roll</button>
+        <div id="players" class="players"></div>
+        <ol id="log" class="log"></ol>
+      </aside>
+    </div>
+  </div>
+
+  <div id="setup" class="setup">
+    <form id="setup-form" class="sheet">
+      <p class="eyebrow">New table</p>
+      <h2>Who is playing?</h2>
+      <p class="lede">Two players sit opposite each other, as Red and Yellow. A 6 leaves the yard. Three 6s in a row forfeits the turn.</p>
+
+      <fieldset>
+        <legend>Players</legend>
+        <div class="choices" id="counts">
+          <label><input type="radio" name="count" value="2" checked /> 2</label>
+          <label><input type="radio" name="count" value="3" /> 3</label>
+          <label><input type="radio" name="count" value="4" /> 4</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seats</legend>
+        <div id="seats" class="seats"></div>
+      </fieldset>
+
+      <div class="sheet-actions">
+        <button class="roll" type="submit">Start game</button>
+        <button id="watch" class="ghost" type="button">Watch the computer</button>
+      </div>
+      <p id="setup-error" class="error"></p>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

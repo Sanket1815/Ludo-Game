@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Ludo.ConsoleApp</RootNamespace>
+    <AssemblyName>Ludo.ConsoleApp</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ludo.Core\Ludo.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>Ludo.Web</RootNamespace>
+    <AssemblyName>Ludo.Web</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ludo.Core\Ludo.Core.csproj" />
+  </ItemGroup>
+</Project>

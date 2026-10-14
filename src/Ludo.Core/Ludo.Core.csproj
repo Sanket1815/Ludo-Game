@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Ludo</RootNamespace>
+    <AssemblyName>Ludo.Core</AssemblyName>
+    <Description>Rules engine for a 2 to 4 player game of Ludo.</Description>
+  </PropertyGroup>
+</Project>
